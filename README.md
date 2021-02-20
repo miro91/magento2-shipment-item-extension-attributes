@@ -1,7 +1,5 @@
 # Magento 2 Module WebDev ShipmentBatches
 
-    ``webdev/module-shipmentbatches``
-
  - [Main Functionalities](#markdown-header-main-functionalities)
  - [Installation](#markdown-header-installation)
 
