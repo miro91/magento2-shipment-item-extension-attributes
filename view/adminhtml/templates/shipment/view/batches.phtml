@@ -1,0 +1,28 @@
+<?php
+/** @var WebDev\ShipmentBatches\Block\Adminhtml\Sales\Shipment\Batches $block */
+$_item = $block->getItem();
+?>
+<tr class="border">
+    <td class="col-product"><?= $block->getColumnHtml($_item, 'name') ?></td>
+    <td class="col-qty"><?= /* @noEscape */ $_item->getQty()*1 ?></td>
+    <td class="col-qty last">
+        <?php if (count($block->getBatches())): ?>
+        <table class="data-table admin__control-table">
+            <thead>
+                <tr class="headings">
+                    <th style="padding-left:1em;"><?= /* @noEscape */ __('Number'); ?></th>
+                    <th><?= /* @noEscape */ __('Expiry'); ?></th>
+                </tr>
+            </thead>
+            <tbody>
+            <?php foreach ($block->getBatches() as $batch): ?>
+                <tr>
+                    <td style="padding-left:1em;"><?= /* @noEscape */ $batch['batch_number']; ?></td>
+                    <td><?= /* @noEscape */ $batch['batch_expiry']; ?></td>
+                </tr>
+            <?php endforeach; ?>
+            </tbody>
+            <?php endif; ?>
+        </table>
+    </td>
+</tr>

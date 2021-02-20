@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+      xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="shipment_items" template="WebDev_ShipmentBatches::shipment/view/items.phtml">
+            <block class="WebDev\ShipmentBatches\Block\Adminhtml\Sales\Shipment\Batches" name="default" as="default"
+                   template="WebDev_ShipmentBatches::shipment/view/batches.phtml"/>
+        </referenceBlock>
+    </body>
+</page>

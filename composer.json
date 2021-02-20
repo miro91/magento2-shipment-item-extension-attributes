@@ -1,0 +1,22 @@
+{
+  "name": "webdev/module-shipmentbatches",
+  "description": "Extend Shipment objects with product batches information",
+  "type": "magento2-module",
+  "license": "proprietary",
+  "authors": [
+    {
+      "email": "miroslav.petrov91@icloud.com",
+      "name": "Miroslav Petrov"
+    }
+  ],
+  "minimum-stability": "dev",
+  "require": {},
+  "autoload": {
+    "psr-4": {
+      "WebDev\\ShipmentBatches\\": ""
+    },
+    "files": [
+      "registration.php"
+    ]
+  }
+}

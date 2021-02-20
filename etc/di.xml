@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Sales\Api\ShipmentRepositoryInterface">
+        <plugin name="webdev_shipment_repository_plugin" type="WebDev\ShipmentBatches\Plugin\ShipmentRepositoryPlugin"/>
+    </type>
+    <type name="\Magento\Sales\Model\ShipOrder">
+        <plugin name="webdev_ship_order_plugin" type="WebDev\ShipmentBatches\Plugin\ShipOrderPlugin"/>
+    </type>
+    <preference for="WebDev\ShipmentBatches\Api\Data\BatchInterface" type="WebDev\ShipmentBatches\Model\Batch"/>
+</config>
